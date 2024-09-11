@@ -2,20 +2,37 @@ import { NavLink } from "@remix-run/react";
 import classNames from "classnames";
 import { useState } from "react";
 
-export const AppHeader = () => {
+export const AppHeaderMobile = () => {
   const [closed, setClosed] = useState(true);
 
   const onClose = () => setClosed(true);
   const onToggle = () => setClosed(!closed);
+
+  const renderNavigation = () => {
+    return (
+      <nav className="mt-14 flex flex-col items-center gap-4 md:flex-row">
+        <NavLink className="header-logo" to="/" onClick={onClose}>
+          Home
+        </NavLink>
+        <NavLink className="header-logo" to="/" onClick={onClose}>
+          About
+        </NavLink>
+        <NavLink className="header-logo" to="/" onClick={onClose}>
+          Projects
+        </NavLink>
+      </nav>
+    );
+  };
+
   return (
     <header
       className={classNames(
-        "header hidden overflow-hidden print:hidden md:block",
+        "header overflow-hidden print:hidden md:block",
         { closed },
         "dark"
       )}
     >
-      <div className="mx-auto flex h-full w-full max-w-5xl items-center justify-evenly md:text-sm">
+      <div className="flex h-14 w-full items-center md:text-sm">
         <button
           className="header-logo ml-4 gap-2 px4 md:hidden"
           onClick={onToggle}
@@ -39,34 +56,11 @@ export const AppHeader = () => {
         <NavLink className="header-logo ml-4 gap-2 px-4" to="/">
           <span className="sr-only">Home</span>
         </NavLink>
-        <div className="flex-1" />
+        <div className="flex-1 pl-20" />
+      </div>
 
-        <nav className="flex h-full flex-col font-font-monospace md:flex-row">
-          <NavLink
-            className="header-link"
-            onClick={onClose}
-            prefetch="intent"
-            to="/"
-          >
-            Home
-          </NavLink>
-          <NavLink
-            className="header-link"
-            onClick={onClose}
-            prefetch="intent"
-            to="/about"
-          >
-            About
-          </NavLink>
-          <NavLink
-            className="header-link"
-            onClick={onClose}
-            prefetch="intent"
-            to="/projects"
-          >
-            Projects
-          </NavLink>
-        </nav>
+      <div className="h-full font-font-monospace md:flex-row">
+        {!closed && renderNavigation()}
       </div>
     </header>
   );
