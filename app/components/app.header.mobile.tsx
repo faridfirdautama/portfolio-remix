@@ -13,7 +13,7 @@ export const AppHeaderMobile = () => {
       <nav className="p-10 flex flex-col items-center gap-4 md:flex-row md:hidden">
         <NavLink
           className="hover:text-teal-500 hover:scale-110 transform duration-300 ml-4 gap-2 px4 md:hidden"
-          to="/about"
+          to="/"
           onClick={onClose}
         >
           About
