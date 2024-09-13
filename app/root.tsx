@@ -5,10 +5,9 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import "./tailwind.css";
+import stylesheet from "./tailwind.css";
 
 import type { LinksFunction } from "@remix-run/node";
-import stylesheet from "~/tailwind.css?url";
 import { AppHeader } from "./components/app.header";
 import { AppHeaderMobile } from "./components/app.header.mobile";
 import { AppFooter } from "./components/app.footer";
