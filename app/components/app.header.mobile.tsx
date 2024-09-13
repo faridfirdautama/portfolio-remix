@@ -10,23 +10,23 @@ export const AppHeaderMobile = () => {
 
   const renderNavigation = () => {
     return (
-      <nav className="mt-4 flex flex-col items-center gap-4 md:flex-row">
+      <nav className="p-10 flex flex-col items-center gap-4 md:flex-row md:hidden">
         <NavLink
-          className="hover:text-teal-500 ml-4 gap-2 px4 md:hidden"
+          className="hover:text-teal-500 hover:scale-110 transform duration-300 ml-4 gap-2 px4 md:hidden"
           to="/about"
           onClick={onClose}
         >
           About
         </NavLink>
         <NavLink
-          className="hover:text-teal-500 ml-4 gap-2 px4 md:hidden"
+          className="hover:text-teal-500 hover:scale-110 duration-300 ml-4 gap-2 px4 md:hidden"
           to="/projects"
           onClick={onClose}
         >
           Projects
         </NavLink>
         <NavLink
-          className="hover:text-teal-500 ml-4 gap-2 px4 md:hidden"
+          className="hover:text-teal-500 hover:scale-110 duration-300 ml-4 gap-2 px4 md:hidden"
           to="/uses"
           onClick={onClose}
         >
@@ -42,9 +42,9 @@ export const AppHeaderMobile = () => {
         closed,
       })}
     >
-      <div className="flex h-14 w-full items-center md:text-sm">
+      <div className="flex mb-4 h-12 w-full items-center md:text-sm md:hidden">
         <button
-          className="header-logo ml-4 gap-2 px4 md:hidden"
+          className="ml-4 gap-2 px4 md:hidden"
           onClick={onToggle}
           title="Toggle Menu"
           type="button"
@@ -63,7 +63,7 @@ export const AppHeaderMobile = () => {
         </button>
         <div className="flex-1 md:hidden" />
 
-        <NavLink className="header-logo ml-4 gap-2 px-4 md:hidden" to="/">
+        <NavLink className="ml-4 gap-2 px-4 md:hidden" to="/">
           <img
             width="42"
             src="/my_logo.jpg"

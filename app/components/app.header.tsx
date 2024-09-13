@@ -11,13 +11,12 @@ export const AppHeader = () => {
     <header
       className={classNames(
         "header hidden overflow-hidden print:hidden md:block",
-        { closed },
-        "dark"
+        { closed }
       )}
     >
-      <div className="mx-auto flex h-full w-full max-w-5xl items-center justify-evenly md:text-sm">
+      <div className="mx-auto mb-4 flex h-full w-full max-w-5xl items-center justify-evenly md:text-sm">
         <button
-          className="header-logo ml-4 gap-2 px4 md:hidden"
+          className=" ml-4 gap-2 px-4 md:hidden"
           onClick={onToggle}
           title="Toggle Menu"
           type="button"
@@ -37,7 +36,7 @@ export const AppHeader = () => {
         </button>
         <div className="flex-1 md:hidden" />
 
-        <NavLink className="header-logo ml-4 gap-2 px-4" to="/">
+        <NavLink className=" ml-4 gap-2 px-4" to="/">
           <img
             width="42"
             src="/my_logo.jpg"
@@ -48,25 +47,27 @@ export const AppHeader = () => {
         </NavLink>
         <div className="flex-1" />
 
-        <nav className="flex h-full flex-col gap-6 mr-4 font-font-monospace md:flex-row">
+        <nav className="flex h-full flex-col gap-10 mr-6 font-sans-bold text-lg md:flex-row">
           <NavLink
-            className="hover:text-teal-500"
+            className="hover:text-teal-500 hover:scale-110 duration-300"
             onClick={onClose}
             prefetch="intent"
-            to="/about"
+            to="/"
           >
             About
           </NavLink>
+          |
           <NavLink
-            className="hover:text-teal-500"
+            className="hover:text-teal-500 hover:scale-110 duration-300"
             onClick={onClose}
             prefetch="intent"
             to="/projects"
           >
             Projects
           </NavLink>
+          |
           <NavLink
-            className="hover:text-teal-500"
+            className="hover:text-teal-500 hover:scale-110 duration-300"
             onClick={onClose}
             prefetch="intent"
             to="/uses"

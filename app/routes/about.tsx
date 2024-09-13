@@ -7,12 +7,12 @@ import { languages, technologies } from "~/data/data";
 export default function About() {
   return (
     <section>
-      <div className="flex flex-col-reverse md:flex-row justify-center gap-10 items-center border-t border-b border-zinc-700 h-[400px]">
-        <div className="text-center md:text-right">
+      <div className="flex flex-col-reverse md:flex-row md:gap-24 justify-center gap-10 items-center border-t border-b border-zinc-700 h-[400px]">
+        <div className="text-center md:text-right md:scale-125">
           <h5>A Fullstack Web Developer</h5>
           <h1 className="">Farid Firda Utama</h1>
         </div>
-        <div className="flex flex-col justify-center items-center h-[108px] w-[108px] bg-teal-500 rounded-full">
+        <div className="flex flex-col justify-center items-center h-[108px] w-[108px] bg-teal-500 rounded-full md:scale-125">
           <img
             width={100}
             className="rounded-full "
@@ -25,18 +25,18 @@ export default function About() {
       {/* About me */}
       <div className="flex flex-col gap-5 mt-10 mb-10 p-10">
         <h3>About Me</h3>
-        <p>
+        <p className="text-zinc-400">
           A Fullstack Web Developer whose passion lies in creating a good
           quality code and software for humans, including but not limited to
           design and product development.
         </p>
-        <p>
+        <p className="text-zinc-400">
           As a self-taught learner, I passioned to learn a new technology
           related to software development. I am certified by{" "}
           <a
             href="https://dicoding.com"
             target="_blank"
-            className="text-teal-500 font-bold italic"
+            className="text-teal-200 font-bold italic"
             rel="noreferrer"
           >
             Dicoding
@@ -64,7 +64,7 @@ export default function About() {
         </div>
 
         <h3 className="mt-5">Skills</h3>
-        <h6>Programming Languages :</h6>
+        <h6 className="text-zinc-400">Programming Languages :</h6>
         <div className="flex flex-row gap-2">
           {languages.map((language, index) => {
             return (
@@ -78,7 +78,7 @@ export default function About() {
           })}
         </div>
 
-        <h6>Technologies :</h6>
+        <h6 className="text-zinc-400">Technologies :</h6>
         <div className="flex flex-row flex-wrap gap-2">
           {technologies.map((technology, index) => {
             return (

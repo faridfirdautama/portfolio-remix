@@ -1,7 +1,8 @@
 export const AppFooter = () => {
   return (
-    <div className="flex flex-col md:flex-row p-5">
-      <div className="flex gap-2 justify-center text-zinc-500">
+    <div className="flex flex-col md:flex-row md:items-center md:justify-evenly p-5">
+      <div className="flex gap-2 justify-center items-center text-zinc-500">
+        <p className="text-zinc-400 hidden md:block">Find me on :</p>
         <a
           href="mailto:faridfirdautama@gmail.com"
           target="_blank"

@@ -17,11 +17,11 @@ export const CardCertificate = (data: ICertificate) => {
         <img
           width={80}
           className="rounded-lg"
-          src="../../public/dicoding_logo.jpeg"
+          src="/dicoding_logo.jpeg"
           alt="ios-dicoding"
         />
         <div>
-          <h5 className="font-bold">{data.title}</h5>
+          <h6 className="font-bold">{data.title}</h6>
           <p className="mb-1 text-sm">{data.company}</p>
           <p className="border border-teal-600 px-3 py-0.5 w-[135px] rounded-full hover:bg-black hover:text-teal-300 text-sm text-teal-500">
             Show certificate
