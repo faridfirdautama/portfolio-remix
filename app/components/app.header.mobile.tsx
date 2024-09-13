@@ -10,15 +10,27 @@ export const AppHeaderMobile = () => {
 
   const renderNavigation = () => {
     return (
-      <nav className="mt-14 flex flex-col items-center gap-4 md:flex-row">
-        <NavLink className="header-logo" to="/" onClick={onClose}>
-          Home
-        </NavLink>
-        <NavLink className="header-logo" to="/" onClick={onClose}>
+      <nav className="mt-4 flex flex-col items-center gap-4 md:flex-row">
+        <NavLink
+          className="hover:text-teal-500 ml-4 gap-2 px4 md:hidden"
+          to="/about"
+          onClick={onClose}
+        >
           About
         </NavLink>
-        <NavLink className="header-logo" to="/" onClick={onClose}>
+        <NavLink
+          className="hover:text-teal-500 ml-4 gap-2 px4 md:hidden"
+          to="/projects"
+          onClick={onClose}
+        >
           Projects
+        </NavLink>
+        <NavLink
+          className="hover:text-teal-500 ml-4 gap-2 px4 md:hidden"
+          to="/uses"
+          onClick={onClose}
+        >
+          Uses
         </NavLink>
       </nav>
     );
@@ -26,11 +38,9 @@ export const AppHeaderMobile = () => {
 
   return (
     <header
-      className={classNames(
-        "header overflow-hidden print:hidden md:block",
-        { closed },
-        "dark"
-      )}
+      className={classNames("header overflow-hidden print:hidden md:block", {
+        closed,
+      })}
     >
       <div className="flex h-14 w-full items-center md:text-sm">
         <button
@@ -53,10 +63,16 @@ export const AppHeaderMobile = () => {
         </button>
         <div className="flex-1 md:hidden" />
 
-        <NavLink className="header-logo ml-4 gap-2 px-4" to="/">
+        <NavLink className="header-logo ml-4 gap-2 px-4 md:hidden" to="/">
+          <img
+            width="42"
+            src="/my_logo.jpg"
+            alt="logo"
+            className="rounded-full"
+          />
           <span className="sr-only">Home</span>
         </NavLink>
-        <div className="flex-1 pl-20" />
+        <div className="flex-1 pl-12" />
       </div>
 
       <div className="h-full font-font-monospace md:flex-row">
