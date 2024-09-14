@@ -1,6 +1,4 @@
-interface IMenu {
+export interface IMenu {
   url: string;
   label: string;
 }
-
-export { IMenu };
