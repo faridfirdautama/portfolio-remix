@@ -17,7 +17,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <section>
+    <>
       <div className="flex flex-col-reverse md:flex-row md:gap-24 justify-center gap-10 items-center border-t border-b border-zinc-700 h-[400px]">
         <div className="text-center md:text-right md:scale-125">
           <h5>A Fullstack Web Developer</h5>
@@ -116,6 +116,6 @@ export default function Index() {
           </Button>
         </form>
       </div>
-    </section>
+    </>
   );
 }
