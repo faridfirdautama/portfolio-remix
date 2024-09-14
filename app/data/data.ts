@@ -18,7 +18,7 @@ const technologies: string[] = [
 ];
 
 const menus: IMenu[] = [
-  { url: "/", label: "About" },
+  { url: "/", label: "Home" },
   { url: "/projects", label: "Projects" },
   { url: "/uses", label: "Uses" },
 ];

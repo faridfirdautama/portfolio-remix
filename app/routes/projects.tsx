@@ -1,3 +1,9 @@
+import { MetaFunction } from "@remix-run/react";
+
+export const meta: MetaFunction = () => {
+  return [{ title: "Projects list" }];
+};
+
 export default function Projects() {
   return (
     <main>

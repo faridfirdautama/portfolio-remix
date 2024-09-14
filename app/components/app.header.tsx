@@ -54,7 +54,7 @@ export const AppHeader = () => {
             prefetch="intent"
             to="/"
           >
-            About
+            Home
           </NavLink>
           |
           <NavLink
