@@ -9,7 +9,7 @@ export default function Projects() {
       </div>
       <div className="flex flex-col gap-5 mt-10 mb-10 p-10">
         <h3>Hardware</h3>
-        <p className="text-zinc-400">
+        <p className="dark:text-zinc-400">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
           beatae, mollitia distinctio optio quos officiis reprehenderit minima
           repellat ad molestias et veritatis ducimus? Facilis aut quos minus
@@ -17,7 +17,7 @@ export default function Projects() {
           sapiente iste voluptates sint.
         </p>
         <h3>Software</h3>
-        <p className="text-zinc-400">
+        <p className="dark:text-zinc-400">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
           beatae, mollitia distinctio optio quos officiis reprehenderit minima
           repellat ad molestias et veritatis ducimus? Facilis aut quos minus
@@ -33,7 +33,7 @@ export default function Projects() {
       </div>
       <div className="flex flex-col gap-5 mt-10 mb-10 p-10">
         <h3>Hardware</h3>
-        <p className="text-zinc-400">
+        <p className="dark:text-zinc-400">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
           beatae, mollitia distinctio optio quos officiis reprehenderit minima
           repellat ad molestias et veritatis ducimus? Facilis aut quos minus
@@ -41,7 +41,7 @@ export default function Projects() {
           sapiente iste voluptates sint.
         </p>
         <h3>Software</h3>
-        <p className="text-zinc-400">
+        <p className="dark:text-zinc-400">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
           beatae, mollitia distinctio optio quos officiis reprehenderit minima
           repellat ad molestias et veritatis ducimus? Facilis aut quos minus

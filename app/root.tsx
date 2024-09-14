@@ -23,7 +23,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="max-w-[1300px] mx-auto font-sans p-4 bg-white text-black dark:bg-black dark:text-white">
+      <body className="max-w-[1300px] mx-auto font-sans p-4 bg-white text-zinc-700 dark:bg-black dark:text-white">
         <AppHeader />
         <AppHeaderMobile />
         {children}

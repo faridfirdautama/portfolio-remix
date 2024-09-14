@@ -36,18 +36,18 @@ export default function Index() {
       {/* About me */}
       <div className="flex flex-col gap-5 mt-10 mb-10 p-10">
         <h3>About Me</h3>
-        <p className="text-zinc-400">
+        <p className="dark:text-zinc-400">
           A Fullstack Web Developer whose passion lies in creating a good
           quality code and software for humans, including but not limited to
           design and product development.
         </p>
-        <p className="text-zinc-400">
+        <p className="dark:text-zinc-400">
           As a self-taught learner, I passioned to learn a new technology
           related to software development. I am certified by{" "}
           <a
             href="https://dicoding.com"
             target="_blank"
-            className="text-teal-200 font-bold italic"
+            className="text-teal-500 dark:text-teal-200 font-bold italic"
             rel="noreferrer"
           >
             Dicoding
@@ -75,13 +75,13 @@ export default function Index() {
         </div>
 
         <h3 className="mt-5">Skills</h3>
-        <h6 className="text-zinc-400">Programming Languages :</h6>
+        <h6 className="dark:text-zinc-400">Programming Languages :</h6>
         <div className="flex flex-row gap-2">
           {languages.map((language, index) => {
             return (
               <div
                 key={index}
-                className="border border-teal-600 rounded-lg px-3 py-1 text-teal-500 hover:bg-black hover:text-teal-300"
+                className="border border-teal-600 rounded-lg px-3 py-1 text-teal-500 hover:bg-black dark:hover:bg-teal-600 hover:text-teal-300 dark:hover:text-white"
               >
                 {language}
               </div>
@@ -89,13 +89,13 @@ export default function Index() {
           })}
         </div>
 
-        <h6 className="text-zinc-400">Technologies :</h6>
+        <h6 className="dark:text-zinc-400">Technologies :</h6>
         <div className="flex flex-row flex-wrap gap-2">
           {technologies.map((technology, index) => {
             return (
               <div
                 key={index}
-                className="border border-teal-600 rounded-lg px-3 py-1 text-teal-500 hover:bg-black hover:text-teal-300"
+                className="border border-teal-600 rounded-lg px-3 py-1 text-teal-500 hover:bg-black dark:hover:bg-teal-600 hover:text-teal-300 dark:hover:text-white"
               >
                 {technology}
               </div>
@@ -116,8 +116,6 @@ export default function Index() {
           </Button>
         </form>
       </div>
-
-      <div className="border border-zinc-700"></div>
     </section>
   );
 }
