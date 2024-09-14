@@ -19,16 +19,14 @@ export default function Uses() {
         <h3>Hardware</h3>
         {hardwares.map((item, index) => (
           <ul className="dark:text-zinc-400" key={index}>
-            <li className="font-bold italic dark:text-teal-500" key={index}>
-              {item.unit}
-            </li>
-            <li key={index}>⌖ {item.specs}</li>
+            <li className="font-bold italic dark:text-teal-500">{item.unit}</li>
+            <li>⌖ {item.specs}</li>
           </ul>
         ))}
         <h3 className="mt-10">Software</h3>
         {softwares.map((item, index) => (
           <ul className="dark:text-zinc-400" key={index}>
-            <li key={index} className="font-bold italic dark:text-teal-500">
+            <li className="font-bold italic dark:text-teal-500">
               {item.category}
             </li>
             {item.list.map((list, index) => (
