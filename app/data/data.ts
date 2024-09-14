@@ -1,3 +1,5 @@
+import { IMenu } from "./types";
+
 const languages: string[] = ["Javascript", "Typescript", "Swift"];
 const technologies: string[] = [
   "CSS",
@@ -15,4 +17,10 @@ const technologies: string[] = [
   "SwiftUI",
 ];
 
-export { languages, technologies };
+const menus: IMenu[] = [
+  { url: "/", label: "About" },
+  { url: "/projects", label: "Projects" },
+  { url: "/uses", label: "Uses" },
+];
+
+export { languages, technologies, menus };

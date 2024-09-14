@@ -1,6 +1,7 @@
 import { NavLink } from "@remix-run/react";
 import classNames from "classnames";
 import { useState } from "react";
+import { menus } from "~/data/data";
 
 export const AppHeaderMobile = () => {
   const [closed, setClosed] = useState(true);
@@ -10,28 +11,19 @@ export const AppHeaderMobile = () => {
 
   const renderNavigation = () => {
     return (
-      <nav className="p-10 flex flex-col items-center gap-4 md:flex-row md:hidden">
-        <NavLink
-          className="hover:text-teal-500 hover:scale-110 transform duration-300 ml-4 gap-2 px4 md:hidden"
-          to="/"
-          onClick={onClose}
-        >
-          About
-        </NavLink>
-        <NavLink
-          className="hover:text-teal-500 hover:scale-110 duration-300 ml-4 gap-2 px4 md:hidden"
-          to="/projects"
-          onClick={onClose}
-        >
-          Projects
-        </NavLink>
-        <NavLink
-          className="hover:text-teal-500 hover:scale-110 duration-300 ml-4 gap-2 px4 md:hidden"
-          to="/uses"
-          onClick={onClose}
-        >
-          Uses
-        </NavLink>
+      <nav className="absolute left-0 right-0 backdrop-blur-md bg-zinc-50/70 text-lg dark:bg-zinc-950/50 p-10 h-full flex flex-col items-center gap-4 z-10 md:flex-row md:hidden">
+        {menus.map((menu, index) => {
+          return (
+            <NavLink
+              to={menu.url}
+              key={index}
+              onClick={onClose}
+              className="hover:text-teal-600 dark:hover:text-teal-500 hover:scale-125 transform duration-300 ml-4 gap-2 px4 md:hidden"
+            >
+              {menu.label}
+            </NavLink>
+          );
+        })}
       </nav>
     );
   };
