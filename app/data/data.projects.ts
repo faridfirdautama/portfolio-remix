@@ -4,7 +4,10 @@ export const projects: IProject[] = [
   {
     title: "Portfolio Website",
     category: "Frontend - Remix",
-    url: ["https://github.com/faridfirdautama/portfolio-remix", "#"],
+    url: [
+      "https://github.com/faridfirdautama/portfolio-remix",
+      "https://farid-utama.vercel.app/",
+    ],
     description: [
       "A personal portfolio website with display a small part of biography of me including skills and some certificates I achieved, a list of some project that built including a couple description of the project.",
       "Also a list of hardware that I used including several software to support me in building some projects.",
