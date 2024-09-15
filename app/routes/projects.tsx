@@ -15,12 +15,6 @@ export default function Projects() {
         </div>
       </div>
       <ProjectWrapper />
-      <div className="flex flex-col-reverse md:flex-row justify-center gap-10 items-center border-t border-b border-zinc-700 h-[400px]">
-        <div className="text-center md:scale-125">
-          <h5>In the past...</h5>
-          <h1 className="">What I have built</h1>
-        </div>
-      </div>
     </main>
   );
 }

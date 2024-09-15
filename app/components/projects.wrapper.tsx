@@ -2,10 +2,13 @@ import { projects } from "~/data/data.projects";
 
 export const ProjectWrapper = () => {
   return (
-    <div className="flex flex-col gap-5 mt-10 mb-10 p-10">
+    <div className="flex flex-wrap justify-center md:justify-start gap-5 mt-10 mb-10 p-10">
       {/* Project Card*/}
       {projects.map((project, index) => (
-        <div className="flex flex-col bg-zinc-800 rounded-xl p-4" key={index}>
+        <div
+          className="flex flex-col bg-zinc-800 rounded-xl p-4 max-w-[350px]"
+          key={index}
+        >
           <div className="flex items-center justify-between">
             <h4>{project.title}</h4>
             <div className="flex gap-2 dark:bg-zinc-900 px-3 py-1 rounded-full">
