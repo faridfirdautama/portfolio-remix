@@ -14,7 +14,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div>
+    <main>
       <div className="flex flex-col-reverse md:flex-row md:gap-24 justify-center gap-10 items-center border-t border-b border-zinc-700 h-[400px]">
         <div className="text-center md:text-right md:scale-125">
           <h5>A Software Developer</h5>
@@ -31,8 +31,8 @@ export default function Index() {
       </div>
 
       {/* About me */}
-      <div className="flex flex-col gap-5 mt-10 mb-10 p-10">
-        <h3>About Me</h3>
+      <div className="flex flex-col gap-5 mt-10 mb-10 md:p-6 text-justify">
+        <h4>About Me</h4>
         <p className="dark:text-zinc-400">
           A Software Developer whose passion lies in creating a good quality
           code and software for humans, including but not limited to design and
@@ -56,6 +56,6 @@ export default function Index() {
         <CertificateWrapper />
         <Skills />
       </div>
-    </div>
+    </main>
   );
 }

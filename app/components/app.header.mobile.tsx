@@ -36,15 +36,15 @@ export const AppHeaderMobile = () => {
     >
       <div className="flex mb-4 h-12 w-full items-center md:text-sm md:hidden">
         <button
-          className="ml-4 gap-2 px4 md:hidden"
+          className="md:hidden"
           onClick={onToggle}
           title="Toggle Menu"
           type="button"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="30"
+            height="30"
             viewBox="0 0 24 24"
           >
             <path
@@ -55,7 +55,7 @@ export const AppHeaderMobile = () => {
         </button>
         <div className="flex-1 md:hidden" />
 
-        <NavLink className="ml-4 gap-2 px-4 md:hidden" to="/">
+        <NavLink className="ml-2 md:hidden" to="/">
           <img
             width="42"
             src="/my_logo.jpg"

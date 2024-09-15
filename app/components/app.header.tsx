@@ -14,7 +14,7 @@ export const AppHeader = () => {
         { closed }
       )}
     >
-      <div className="mx-auto mb-4 flex h-full w-full max-w-5xl items-center justify-evenly md:text-sm">
+      <div className="mb-4 flex h-full w-full items-center md:text-sm">
         <button
           className=" ml-4 gap-2 px-4 md:hidden"
           onClick={onToggle}
@@ -36,7 +36,7 @@ export const AppHeader = () => {
         </button>
         <div className="flex-1 md:hidden" />
 
-        <NavLink className=" ml-4 gap-2 px-4" to="/">
+        <NavLink className="ml-4 gap-2 px-4" to="/">
           <img
             width="42"
             src="/my_logo.jpg"

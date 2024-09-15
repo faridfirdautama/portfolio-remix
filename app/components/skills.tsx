@@ -3,7 +3,7 @@ import { languages, technologies } from "../data/data";
 export const Skills = () => {
   return (
     <div className="flex flex-col gap-5 mt-10 mb-10">
-      <h3 className="mt-5">Skills</h3>
+      <h4 className="mt-5">Skills</h4>
       <h6 className="dark:text-zinc-400">Programming Languages :</h6>
       <div className="flex flex-row gap-2">
         {languages.map((language, index) => {
