@@ -2,7 +2,7 @@ import { softwares } from "~/data/data";
 
 const Software = () => {
   return (
-    <div className="flex flex-col gap-5 mb-2 p-10">
+    <div className="flex flex-col gap-5 mb-2 p-6">
       <h3>Software</h3>
       {softwares.map((item, index) => (
         <ul className="dark:text-zinc-400" key={index}>

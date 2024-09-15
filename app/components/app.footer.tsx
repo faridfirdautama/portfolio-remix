@@ -1,7 +1,7 @@
 export const AppFooter = () => {
   return (
     <div className="border-t border-slate-300 dark:border-zinc-700 flex flex-col md:flex-row md:items-center md:justify-evenly p-5">
-      <div className="flex gap-2 justify-center items-center dark:text-zinc-500">
+      <div className="flex gap-2 justify-center items-center dark:text-zinc-500 md:scale-105">
         <p className="dark:text-zinc-400 hidden md:block">Find me on :</p>
         <a
           href="mailto:faridfirdautama@gmail.com"
@@ -10,8 +10,8 @@ export const AppFooter = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
           >
             <path
@@ -27,8 +27,8 @@ export const AppFooter = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
           >
             <path
@@ -44,8 +44,8 @@ export const AppFooter = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
           >
             <path
@@ -61,8 +61,8 @@ export const AppFooter = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="28"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
           >
             <path
@@ -77,8 +77,8 @@ export const AppFooter = () => {
           </svg>
         </a>
       </div>
-      <div className="text-center p-4">
-        <p className="font-sans text-md italic text-zinc-500">
+      <div className="text-center p-2">
+        <p className="font-sans text-xs md:text-lg italic text-zinc-500">
           ©2024 Farid Firda Utama. All rights reserved.
         </p>
       </div>

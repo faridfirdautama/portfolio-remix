@@ -2,16 +2,16 @@ import { projects } from "~/data/data.projects";
 
 export const ProjectWrapper = () => {
   return (
-    <div className="flex flex-wrap justify-center md:justify-start gap-5 mt-10 mb-10 p-10">
+    <div className="flex flex-wrap justify-center md:justify-start gap-5 mt-10 mb-10">
       {/* Project Card*/}
       {projects.map((project, index) => (
         <div
-          className="flex flex-col bg-zinc-800 rounded-xl p-4 max-w-[350px]"
+          className="flex flex-col bg-zinc-300 dark:bg-zinc-900 rounded-xl p-4 max-w-[350px]"
           key={index}
         >
           <div className="flex items-center justify-between">
-            <h4>{project.title}</h4>
-            <div className="flex gap-2 dark:bg-zinc-900 px-3 py-1 rounded-full">
+            <h5>{project.title}</h5>
+            <div className="flex gap-2 bg-zinc-50 dark:bg-zinc-800 px-3 py-1 rounded-full">
               <a
                 href={project.url[0]}
                 target="_blank"
@@ -55,13 +55,13 @@ export const ProjectWrapper = () => {
             {project.tags.map((tag) => (
               <p
                 key={tag}
-                className="px-2 py-1 dark:bg-zinc-700 rounded-md dark:text-zinc-300 text-xs"
+                className="px-2 py-1 bg-zinc-50 dark:bg-zinc-700 rounded-md dark:text-zinc-300 text-xs"
               >
                 {tag}
               </p>
             ))}
           </div>
-          <p className="text-sm pt-3">Description :</p>
+          <p className="text-sm font-bold pt-3">Description :</p>
           {project.description.map((desc) => (
             <ul className="dark:text-zinc-400 text-sm text-justify" key={desc}>
               <li>⌖ {desc}</li>

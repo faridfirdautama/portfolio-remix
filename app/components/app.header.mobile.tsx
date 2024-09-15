@@ -34,7 +34,7 @@ export const AppHeaderMobile = () => {
         closed,
       })}
     >
-      <div className="flex mb-4 h-12 w-full items-center md:text-sm md:hidden">
+      <div className="flex mb-4 pl-1 h-12 w-full items-center md:text-sm md:hidden">
         <button
           className="md:hidden"
           onClick={onToggle}

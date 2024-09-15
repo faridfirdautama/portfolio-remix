@@ -2,7 +2,7 @@ import { hardwares } from "~/data/data";
 
 const Hardware = () => {
   return (
-    <div className="flex flex-col gap-5 mb-2 p-10">
+    <div className="flex flex-col gap-5 mb-2 p-6">
       <h3>Hardware</h3>
       {hardwares.map((item, index) => (
         <ul className="dark:text-zinc-400" key={index}>
