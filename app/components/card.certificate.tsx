@@ -1,10 +1,7 @@
-interface ICertificate {
-  url: string;
-  title: string;
-  company: string;
-}
+import { ICertificate } from "~/data/types";
+import { certificates } from "~/data/data";
 
-export const CardCertificate = (data: ICertificate) => {
+const Certificate = (data: ICertificate) => {
   return (
     <div className="hover:scale-105 transform duration-300">
       {" "}
@@ -30,4 +27,18 @@ export const CardCertificate = (data: ICertificate) => {
       </a>
     </div>
   );
+};
+
+const CardCertificate = () => {
+  return (
+    <div className="flex flex-col justify-start items-start gap-6 md:flex-row md:flex-wrap">
+      {certificates.map((data, index) => (
+        <Certificate key={index} {...data} />
+      ))}
+    </div>
+  );
+};
+
+export const CertificateWrapper = () => {
+  return <CardCertificate />;
 };

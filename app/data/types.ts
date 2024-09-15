@@ -20,3 +20,9 @@ export interface ISoftware {
   category: string;
   list: string[];
 }
+
+export interface ICertificate {
+  url: string;
+  title: string;
+  company: string;
+}

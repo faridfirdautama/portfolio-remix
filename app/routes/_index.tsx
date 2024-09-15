@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { CardCertificate } from "~/components/card.certificate";
+import { CertificateWrapper } from "~/components/card.certificate";
 import { Input } from "~/components/input";
 import { Textarea } from "~/components/textarea";
 import { Button } from "~/components/button";
@@ -54,25 +54,9 @@ export default function Index() {
           </a>{" "}
           as a DevOps Engineer in 2023 and iOS Developer in 2024.
         </p>
+
         <h6>Certificates :</h6>
-        <div className="flex flex-col justify-start items-start gap-6 md:flex-row md:flex-wrap">
-          {/* DICODING CARD */}
-          <CardCertificate
-            url="https://www.dicoding.com/certificates/98XW2OLM9PM3"
-            title="iOS Developer"
-            company="Dicoding Indonesia"
-          />
-          <CardCertificate
-            url="https://www.dicoding.com/certificates/QLZ97M0V9P5D"
-            title="DevOps CI / CD"
-            company="Dicoding Indonesia"
-          />
-          <CardCertificate
-            url="https://www.dicoding.com/certificates/KEXL821O4ZG2"
-            title="Microservices Architecture"
-            company="Dicoding Indonesia"
-          />
-        </div>
+        <CertificateWrapper />
 
         <h3 className="mt-5">Skills</h3>
         <h6 className="dark:text-zinc-400">Programming Languages :</h6>

@@ -1,11 +1,29 @@
-import { IMenu } from "./types";
-import { IHardware, ISoftware } from "./types";
+import { IMenu, ICertificate, IHardware, ISoftware } from "./types";
 
 // MENU
 export const menus: IMenu[] = [
   { url: "/", label: "Home" },
   { url: "/projects", label: "Projects" },
   { url: "/uses", label: "Uses" },
+];
+
+// CERTIFICATES
+export const certificates: ICertificate[] = [
+  {
+    url: "https://www.dicoding.com/certificates/98XW2OLM9PM3",
+    title: "iOS Developer",
+    company: "Dicoding Indonesia",
+  },
+  {
+    url: "https://www.dicoding.com/certificates/QLZ97M0V9P5D",
+    title: "DevOps CI / CD",
+    company: "Dicoding Indonesia",
+  },
+  {
+    url: "https://www.dicoding.com/certificates/KEXL821O4ZG2",
+    title: "Microservices Architecture",
+    company: "Dicoding Indonesia",
+  },
 ];
 
 // SKILLS
