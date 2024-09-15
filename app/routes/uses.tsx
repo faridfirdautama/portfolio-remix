@@ -1,6 +1,6 @@
 import { MetaFunction } from "@remix-run/react";
-import { hardwares } from "~/data/data";
-import { softwares } from "~/data/data";
+import { HardwareWrapper } from "~/components/uses.hardware";
+import { SoftwareWrapper } from "~/components/uses.software";
 
 export const meta: MetaFunction = () => {
   return [{ title: "Gear uses" }];
@@ -15,26 +15,8 @@ export default function Uses() {
           <h1 className="">My Favorite Gear</h1>
         </div>
       </div>
-      <div className="flex flex-col gap-5 mt-10 mb-10 p-10">
-        <h3>Hardware</h3>
-        {hardwares.map((item, index) => (
-          <ul className="dark:text-zinc-400" key={index}>
-            <li className="font-bold italic dark:text-teal-500">{item.unit}</li>
-            <li>⌖ {item.specs}</li>
-          </ul>
-        ))}
-        <h3 className="mt-10">Software</h3>
-        {softwares.map((item, index) => (
-          <ul className="dark:text-zinc-400" key={index}>
-            <li className="font-bold italic dark:text-teal-500">
-              {item.category}
-            </li>
-            {item.list.map((list, index) => (
-              <li key={index}>⌖ {list}</li>
-            ))}
-          </ul>
-        ))}
-      </div>
+      <HardwareWrapper />
+      <SoftwareWrapper />
     </main>
   );
 }
