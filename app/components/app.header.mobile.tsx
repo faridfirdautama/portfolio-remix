@@ -53,7 +53,7 @@ export const AppHeaderMobile = () => {
             />
           </svg>
         </button>
-        <div className="flex-1 md:hidden" />
+        <div className="flex-1" />
 
         <NavLink className="ml-2 md:hidden" to="/">
           <img
@@ -67,7 +67,7 @@ export const AppHeaderMobile = () => {
         <div className="flex-1 pl-12" />
       </div>
 
-      <div className="h-full font-font-monospace md:flex-row">
+      <div className="h-full font-font-monospace md:flex-row md:hidden">
         {!closed && renderNavigation()}
       </div>
     </header>
