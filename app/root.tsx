@@ -24,17 +24,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="max-w-[1300px] mx-auto font-sans p-4 bg-white text-zinc-700 dark:bg-black dark:text-white">
-        <AppHeader />
-        <AppHeaderMobile />
         {children}
         <ScrollRestoration />
         <Scripts />
-        <AppFooter />
       </body>
     </html>
   );
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <Layout>
+      <AppHeaderMobile />
+      <AppHeader />
+      <main>
+        <Outlet />
+      </main>
+      <AppFooter />
+    </Layout>
+  );
 }
