@@ -1,15 +1,16 @@
 import { IMenu } from "./types";
+import { IHardware, ISoftware } from "./types";
 
 // MENU
-const menus: IMenu[] = [
+export const menus: IMenu[] = [
   { url: "/", label: "Home" },
   { url: "/projects", label: "Projects" },
   { url: "/uses", label: "Uses" },
 ];
 
 // SKILLS
-const languages: string[] = ["Javascript", "Typescript", "Swift"];
-const technologies: string[] = [
+export const languages: string[] = ["Javascript", "Typescript", "Swift"];
+export const technologies: string[] = [
   "CSS",
   "Tailwind",
   "NVIM",
@@ -26,7 +27,7 @@ const technologies: string[] = [
 ];
 
 // GEAR
-const hardwares = [
+export const hardwares: IHardware[] = [
   {
     unit: "Laptop",
     specs: "MacBook Air M1 2020 | 8GB RAM | 256GB SSD",
@@ -41,7 +42,7 @@ const hardwares = [
   },
 ];
 
-const softwares = [
+export const softwares: ISoftware[] = [
   {
     category: "CLI - Terminal tools",
     list: ["Iterm2 + tmux"],
@@ -67,5 +68,3 @@ const softwares = [
     list: ["Notion", "Github", "TLDraw"],
   },
 ];
-
-export { languages, technologies, menus, hardwares, softwares };
