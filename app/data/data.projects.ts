@@ -12,8 +12,18 @@ export const projects: IProject[] = [
       "A personal portfolio website with display a small part of biography of me including skills and some certificates I achieved, a list of some project that built including a couple description of the project.",
       "Also a list of hardware that I used including several software to support me in building some projects.",
       "This website was build with Remix and all code following a guide of ESLint also implementing githook by husky prior to publishing to github, and finally it was deployed with Vite & Vercel.",
+      "Responsive to mobile view, an implementing both Dark or Light themes triggered by your system's themes.",
     ],
-    tags: ["Typescript", "Remix", "React", "Tailwind", "Vite", "EsLint"],
+    tags: [
+      "Typescript",
+      "Remix",
+      "React",
+      "Tailwind",
+      "Vite",
+      "EsLint",
+      "Dark mode",
+      "Responsive",
+    ],
   },
   {
     title: "RAWG - List of games",
@@ -34,7 +44,7 @@ export const projects: IProject[] = [
     ],
     description: [
       "A monolith web application with full CRUD functionality that handling features of submission assignment in some forms input.",
-      "This web app uses a backend from appbackend.io ",
+      "This web app uses a backend from appbackend.io, responsive to mobile view, also implement both themes Light and Dark automatically by your system themes. ",
     ],
     tags: ["Typescript", "Javascript", "Appbackend.io", "HTML", "CSS", "Vite"],
   },
