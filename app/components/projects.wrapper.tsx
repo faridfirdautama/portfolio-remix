@@ -64,7 +64,9 @@ export const ProjectWrapper = () => {
           <p className="text-sm font-bold pt-3">Description :</p>
           {project.description.map((desc) => (
             <ul className="dark:text-zinc-400 text-sm text-justify" key={desc}>
-              <li>⌖ {desc}</li>
+              <li>
+                <span className="dark:text-white text-lg">⌖</span> {desc}
+              </li>
             </ul>
           ))}
         </div>
