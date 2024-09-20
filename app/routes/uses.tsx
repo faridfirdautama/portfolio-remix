@@ -23,8 +23,10 @@ export default function Uses() {
           />
         </div>
       </div>
-      <HardwareWrapper />
-      <SoftwareWrapper />
+      <div className="flex flex-col justify-end md:flex-row-reverse md:text-left md:gap-14">
+        <HardwareWrapper />
+        <SoftwareWrapper />
+      </div>
     </main>
   );
 }
